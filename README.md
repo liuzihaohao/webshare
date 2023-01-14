@@ -5,7 +5,7 @@
 
 ## 部署
 ```
-python manage.py makemigrations
+pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
