@@ -11,15 +11,14 @@
     <title>{{obj.name}}</title>
 </head>
 <body>
-    <div class="container" style="margin-top: 10px;">
+    <div class="container m-6" style="margin-top: 10px;">
         {% if messages %}
-        <div class="alert alert-warning" role="alert">
+        <div class="notification is-danger" role="alert">
             {% for message in messages %}
-            <a href="#" class="alert-link">{{ message }}</a>
+            {{ message }}
             {% endfor %}
         </div>
         {% endif %}
-        <!-- <a href="/" class="btn btn-default" role="button"><span class="glyphicon glyphicon-arrow-left"></span>返回首页</a> -->
         <h1 style="margin-top: 20px;" class="title">{{obj.name}}</h1>
         <h5 class="subtitle">uuid:{{obj.duuid}}</h5>
         <h5 class="subtitle">创建时间:{{obj.ctime}}</h5>
@@ -31,7 +30,7 @@
                 <p class="help">看不清？点击图片换一个。</p>
                 <input type="text" name="files" value="{{obj.duuid}}" style="display: none;">
                 {% csrf_token %}
-                <button type="submit" class="button is-link">下载</button>
+                <button type="submit" class="button is-link mt-3">下载</button>
             </div>
         </form>
     </div>

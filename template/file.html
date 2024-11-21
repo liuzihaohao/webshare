@@ -11,12 +11,11 @@
     <title>File share</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container m-6">
         <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="margin-top: 20px;">
             <thead>
             <tr>
                 <th>ID</th>
-                <!-- <th>文件唯一值</th> -->
                 <th>文件名</th>
                 <th>创建时间</th>
                 <th>下载链接</th>
@@ -26,7 +25,6 @@
             {% for i in obj %}
                 <tr>
                     <th scope="row">{{i.id}}</th>
-                    <!-- <td>{{i.duuid}}</td> -->
                     <td>{{i.name}}</td>
                     <td>{{i.ctime}}</td>
                     <td><a class="button is-success" href='/{{i.duuid}}/'>下载</a></td>
