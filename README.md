@@ -1,9 +1,9 @@
-# webshare
+# Webshare
 
-## 简介
-此网站是一个文件分享网站，可以通过将文件传入网站然后让用户下载
+## Introduction
+This website can share file to others. And it like a file server.
 
-## 部署
+## Install
 ```
 pip install -r requirements.txt
 python manage.py migrate
