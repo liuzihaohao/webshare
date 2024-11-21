@@ -1,3 +1,8 @@
+db.cnf
+media/file/*
+!media/file/example.png
+!media/file/example.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
